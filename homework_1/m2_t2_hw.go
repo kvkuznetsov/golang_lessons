@@ -24,7 +24,7 @@ func main() {
 	var thousands int = inputNumber / 1000
 	var hundreds int = (inputNumber - thousands * 1000) / 100
 	var tens int = (inputNumber - thousands * 1000 - hundreds * 100) / 10
-	var units int = inputNumber - thousands * 1000 - hundreds * 100 - tens * 10
+	var units int = inputNumber % 10
 
 	if (thousands * 10 + hundreds == units * 10 + tens){
 		isNumberPolindrom = true

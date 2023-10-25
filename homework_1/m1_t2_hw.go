@@ -22,7 +22,7 @@ func main() {
 
 	var hundreds int = inputNumber / 100
 	var tens int = (inputNumber - hundreds*100) / 10
-	var units int = inputNumber - hundreds*100 - tens*10
+	var units int = inputNumber % 10
 
 	fmt.Printf("Result = %v%v%v\n", units, tens, hundreds)
 
