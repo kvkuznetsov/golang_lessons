@@ -20,7 +20,7 @@ import (
 func main() {
 	var code string
 
-	fmt.Println("Введите строку для шифрования")
+	fmt.Println("Введите строку для дефишрования")
     fmt.Scanf("%s\n", &code)
 
     fmt.Printf("Расшифрованная строка = %v\n", deencrypter.Deencrypt(code, 2))
